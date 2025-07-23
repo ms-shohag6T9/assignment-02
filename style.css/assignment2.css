@@ -1,0 +1,46 @@
+/* ======All colours are here ====== */
+:root{
+    --dark1:rgba(0, 0, 0, 1);
+    --dark2:rgba(137, 135, 161, 1);
+    --orange:rgba(233, 90, 8, 1);
+}
+/* ======All fonts are here(inter-for all and noto-serif for headers) ====== */
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.noto-serif{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* ======All Navigation classes are here====== */
+.nav-bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 1140px;
+    margin: 30px auto;
+}
+.nav-btns {
+    display: flex;
+    gap: 48px;
+}
+/* card-shopping is a wrong way to add icon; you should take help */
+.card-shopping{
+    display: flex;
+    justify-content:space-between;
+    align-items: center; 
+    gap: 5px;
+}
+.nav-btns a{
+    text-decoration: none;
+    color: var(--dark1);
+}
+.halka-kala{
+    color: var(--dark2);
+}
+/* ======Here add a hover of nav-btns====== */
