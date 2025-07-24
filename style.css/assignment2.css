@@ -67,9 +67,11 @@
 .nav-title{
     font-size: 4.07rem;
     color: var(--dark1);
+    margin-bottom: 0px;
 }
 .nav-description{
     font-size: 1.375rem;
+    margin-top: 13px;
 }
 /* ======RESPONSIVE====== */
 @media screen and (max-width: 576px) {
@@ -81,5 +83,20 @@
     .mobile-only{
         display: none;
     }
+    .nav-title-banner-container{
+        flex-direction: column-reverse;
+        margin: 28px auto;
+    }
+    .nav-banner{
+        width: 102.25%;
+        height: auto;
+        max-width: 422px;
+    }
+    .nav-title{
+        font-size: 2rem;
+    }
+    .nav-description{
+    font-size: 0.875rem;
+}
 
 }
