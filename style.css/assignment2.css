@@ -105,7 +105,7 @@ body{
     max-width: 1140px;
     margin: 0px auto ;
     gap: 80px;
-    /* border: 1px solid black; */
+    position: relative;
 }
 .trusted-seller ul{
     padding-top: 10px;
@@ -113,6 +113,12 @@ body{
 }
 .trusted-seller ul li{
     padding-top: 20px;
+}
+.trusted-badge{
+    width: 250px;
+    position: absolute;
+    top: -16.67%;
+    right: 43.86%;
 }
 /* ======RESPONSIVE====== */
 @media screen and (max-width: 576px) {
