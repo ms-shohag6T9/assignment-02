@@ -4,6 +4,12 @@
     --dark2:rgba(137, 135, 161, 1);
     --orange:rgba(233, 90, 8, 1);
 }
+.headxorange{
+    color: var(--orange);
+}
+.textx-black2{
+    color: var(--dark2);
+}
 /* ========mobile only========= */
 .mobile-only{
     display:block;
@@ -16,7 +22,7 @@
 }
 .noto-serif{
   font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
+  font-weight: bold;
   font-style: normal;
 }
 /* ======All Navigation classes are here====== */
@@ -48,7 +54,23 @@
     color: var(--dark2);
 }
 /* ======Here add a hover of nav-btns====== */
-
+/* ======TITLE-DESCRIPTION-BANNER====== */
+.nav-title-banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 1140px;
+    margin: 120px auto;
+}
+.nav-title{
+    font-size: 4.07rem;
+    color: var(--dark1);
+}
+.nav-description{
+    font-size: 1.375rem;
+}
 /* ======RESPONSIVE====== */
 @media screen and (max-width: 576px) {
     /* =====Nav-bar====== */
