@@ -4,6 +4,10 @@
     --dark2:rgba(137, 135, 161, 1);
     --orange:rgba(233, 90, 8, 1);
 }
+/* ========mobile only========= */
+.mobile-only{
+    display:block;
+}
 /* ======All fonts are here(inter-for all and noto-serif for headers) ====== */
 .inter{
   font-family: "Inter", sans-serif;
@@ -44,3 +48,16 @@
     color: var(--dark2);
 }
 /* ======Here add a hover of nav-btns====== */
+
+/* ======RESPONSIVE====== */
+@media screen and (max-width: 576px) {
+    /* =====Nav-bar====== */
+    .navigation-logo{
+        width: 78px;
+        height: 53px;
+    }
+    .mobile-only{
+        display: none;
+    }
+
+}
