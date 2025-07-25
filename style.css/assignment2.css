@@ -3,94 +3,103 @@
     --dark1:rgba(0, 0, 0, 1);
     --dark2:rgba(137, 135, 161, 1);
     --orange:rgba(233, 90, 8, 1);
+    --white:rgb(255, 255, 255);
     --bodycolor:rgba(217, 217, 217, 0);
 }
-body{
-    background-color: var(--bodycolor);
-}
-.headxorange{
-    color: var(--orange);
-}
-.textx-black2{
-    color: var(--dark2);
-}
-.flex-me{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+/* ======Similar class in multiple tags====== */
 .font-fix1{
-    font-weight: bold;
-    font-size: 1.25rem;
+ font-weight: bold;
+ font-size: 1.25rem;
 }
 .font-fix2{
-    font-weight: bold;
-    font-size: 2.50rem;
+ font-weight: bold;
+ font-size: 2.50rem;
 }
 .font-fix3{
-    font-weight: 600;
-    color: white;
+ font-weight: 600;
+ color: var(--white);
 }
 .font-fix4{
-    font-weight: 600;
-    font-size: 1.75rem;
-    color: white;
+ font-weight: 600;
+ font-size: 1.75rem;
+ color: var(--white);
 }
-/* ========mobile only========= */
+.list-flext{
+ display: flex;
+ flex-direction: column;
+ row-gap: 35px;
+}
+.no-decore{
+ list-style: none;
+ font-size: 1.25rem;
+ font-weight: 400;
+}
+.headxorange{
+ color: var(--orange);
+}
+.textx-black2{
+ color: var(--dark2);
+}
+.flex-me{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+ /* ========Veiw in only MOBILE/DESKTOP========= */
 .desktop-only{
-    display:block;
+ display:block;
 }
 .mobile-only{
-    display:none;
+ display:none;
 }
-/* ======All fonts are here(inter-for all and noto-serif for headers) ====== */
+ /* ======All fonts are here(inter-for all and noto-serif for headers) ====== */
 .inter{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+ font-family: "Inter", sans-serif;
+ font-optical-sizing: auto;
+ font-style: normal;
 }
 .noto-serif{
-  font-family: "Noto Serif", serif;
-  font-weight: bold;
-  font-style: normal;
+ font-family: "Noto Serif", serif;
+ font-weight: bold;
+ font-style: normal;
 }
-/* ======All Navigation classes are here====== */
+  /* ====== HEADER >>>> NAV ====== */
 .nav-bar-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    max-width: 1140px;
-    margin: 30px auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+ height: auto;
+ max-width: 1140px;
+ margin: 30px auto;
 }
 .nav-btns {
-    display: flex;
-    gap: 48px;
+ display: flex;
+ gap: 48px;
 }
-/* card-shopping is a wrong way to add icon; you should take help */
+ /* card-shopping is a wrong way to add icon; you should take help */
 .card-shopping{
-    display: flex;
-    justify-content:space-between;
-    align-items: center; 
-    gap: 5px;
+ display: flex;
+ justify-content:space-between;
+ align-items: center; 
+ gap: 5px;
 }
 .nav-btns a{
-    text-decoration: none;
-    color: var(--dark1);
+ text-decoration: none;
+ color: var(--dark1);
 }
-/* ======Here add a hover of nav-btns====== */
-/* ======TITLE-DESCRIPTION-BANNER====== */
+ /* ======Here add a hover of nav-btns====== */
+ /* ======TITLE-DESCRIPTION-BANNER====== */
  .nav-title-banner-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    max-width: 1140px;
-    margin: 120px auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+ height: auto;
+ max-width: 1140px;
+ margin: 120px auto;
  }
 .nav-title{
     font-size: 4.07rem;
@@ -119,7 +128,7 @@ body{
     margin-top: 8px;
     margin-inline:126px ;
  }
-/* ======Main-Grid-Pardt====== */
+/* ======Main-Grid-Part====== */
 .trusted-seller{
     display: flex;
     justify-content: space-between;
@@ -193,14 +202,86 @@ body{
     width: 110%;
     color:var(--orange);
 }
-.search-bar-div{
+.search-bar-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url('../media/news-letter-bg.png');
+    background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 55vh;
+    margin-top: 140px;
+}
+/* ======FOOTRR(footer-container)====== */
+.footer-container{
+    display: flex;
+    max-width: 1440px;
+    margin: 60px auto;
+    gap: 110px;
+}
+.logo-description{
+    max-width: 360px;
+    font-size: 1.4rem;
+    font-family: 500;
+}
+.list-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 110px;
+}
+.list-container ul{
+    padding: 5px;
+    margin: 5px;
+}
+.social-logo{
+    display: flex;
+    gap: 30px;
+}
+.social-logo img{
+    width: 16.5%;
+    height: 12.5%;
+}
+/* ======MAIN>Ssection-2 product-card-container ====== */
+.TWO{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-card-container{
+    display: grid;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 210px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 30px 0.25px rgb(185, 181, 181);
+}
+.product-name{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+.product-price{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 0px;
+}
+.add-cart-btn{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--orange);
+    border: 1.5px solid var(--orange);
+    padding: 20px 40px;
 }
 /* ======RESPONSIVE====== */
 @media screen and (max-width: 576px) {
@@ -259,5 +340,62 @@ body{
     }
     .headerxtrust{
         text-align: left;
+    }
+    .deal-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .single-deal{
+        width: 355px;
+        height: 202px;
+        border-radius: 18px;
+    }
+    .double-deal{
+        gap: 18px;
+    }
+    .deal-img1,
+    .deal-img2{
+        width: 354px;
+        height: 198px;
+    }
+    .search-bar-container{
+        width: 100%;
+        height: 30vh;
+        margin-top: 60px;
+    }
+    /* ===FOOTER(Responsible for mobile) */
+    .footer-container{
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        gap: 15px;
+        padding-left: 10px;
+    }
+    .social-logo{
+        gap: 40px;
+    }
+    .social-logo img{
+        width: 35px;
+        height: auto;
+    }
+    .list-container{
+        flex-direction: column;
+        text-align: left;
+        gap: 10px;
+    }
+    .product-card-container{
+        grid-template-columns: repeat(2, 165px);
+    }
+    .add-cart-btn{
+        font-size: 1rem;
+        border: 1px solid var(--orange);
+        padding: 15px 29px;
+    }
+    .product-name,
+    .product-price{
+        font-size: 1rem;
     }
 }
